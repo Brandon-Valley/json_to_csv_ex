@@ -5,6 +5,7 @@ from sms.logger import json_logger
 
 import os
 
+
 HEADER_ORDER_LIST = ['datetime','open','high','low','close','volume'] # this defines the order of the headers in the output csv
 
 SCRIPT_PARENT_DIR_PATH = os.path.dirname(os.path.abspath(__file__))
@@ -12,7 +13,6 @@ print(SCRIPT_PARENT_DIR_PATH)
 
 TEST_DIR_PATH = os.path.abspath(os.path.join(SCRIPT_PARENT_DIR_PATH, '..', 'test'))
 print(TEST_DIR_PATH)
-
 
 INPUT_JSON_FILE_PATH = os.path.abspath(os.path.join(TEST_DIR_PATH, 'input_data.json'))
 print(INPUT_JSON_FILE_PATH)
